@@ -1,9 +1,9 @@
-from django.contrib.admin.widgets import AdminTimeWidget, AdminDateWidget
-from django.forms import TextInput, Select, Textarea
-from django.utils.safestring import mark_safe
 from django import forms
+from django.contrib.admin.widgets import AdminDateWidget, AdminTimeWidget
+from django.forms import Select, Textarea, TextInput
+from django.templatetags.static import static
+from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext as _
-from django.contrib.admin.templatetags.admin_static import static
 
 
 class NumberInput(TextInput):
